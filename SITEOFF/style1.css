@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+/* font-family: 'DM Serif Display', serif; */
+/* font-family: 'Karla', sans-serif; */
+body {
+    width: 100%;
+    margin-left : auto;
+    margin-right : auto;
+}
+.mobile {
+    display: none;
+}
+header{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+    height: 40%;
+    width: 40%;
+    justify-content: space-around;
+}
+ul li {
+    height: 100%;
+}
+ul li a{
+    display: block;
+    line-height: 39px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    color: darkgray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+ul li a:hover {
+    color : black;
+    font-weight: 600;
+}
+.header-btn {
+    line-height: 100px;
+    width: 120px;
+    border : 2px solid black;
+}
+.header-btn:hover {
+    background-color: black;
+}
+.header-btn:hover > a {
+    color : white;
+}
+.header-btn a {
+    color: black;
+}
+footer {
+    width: 100%;
+    background-color: rgb(245, 244, 244);
+    position: relative;
+}
+
+footer .up {
+    z-index: 10000;
+    width: 70%;
+    height: 100px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(199, 199, 199);
+}
+
+
+
+
+footer .down {
+    width: 70%;
+    z-index: 10;
+    margin : 60px auto 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .down .col-3{
+    width: 25%;
+}
+
+footer .down .col-3 a:hover {
+    border-bottom: 2px solid black;
+    width: fit-content;
+}
+footer .down .col-3 a {
+    border-bottom: transparent solid 2px;
+    font-family: 'Karla', sans-serif;
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+footer .down .col-3 .title {
+    z-index: 100;
+    color : rgb(114, 114, 114);
+    margin-bottom : 25px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.box {
+    width: 60%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  
+}
+
+.box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'DM Serif Display', serif;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.container{
+    display: flex;
+    justify-content: center ;   
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #1f242d;
+
+}
+.container form{
+    width: 100%;
+    padding: 40px;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 39px;
+}
+form .row
+{
+    display: flex;
+   gap: 15px;
+    
+}
+.form .column {
+    flex: 1 1 50%; /* Adjust the width of each column */
+}
+
+
+.column .title{
+    font-size: 25px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.column .inputbox{
+    margin: 15px 0;
+    
+}
+.inputbox span{
+
+display: block;
+margin-bottom: 10px;
+
+
+}
+.inputbox input{
+    width: 100%;
+    padding:10px 15px ;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.column .flex{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+    
+}
+.flex .inputbox {
+    margin-top: 10px; 
+    
+ 
+}
+form .btn{
+    width: 100%; 
+    padding: 12px;
+    background: #8175d3;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+form .btn:hover{
+    background: #6659b3;
+}
+.row{
+    display: flex;
+    gap:20px;
+}

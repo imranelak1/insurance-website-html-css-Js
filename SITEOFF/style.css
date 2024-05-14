@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+/* font-family: 'DM Serif Display', serif; */
+/* font-family: 'Karla', sans-serif; */
+body {
+    width: 100%;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+header{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 0.9rem;
+    align-items: center;
+    height: 40%;
+    width: 40%;
+    justify-content: space-around;
+}
+ul li {
+    height: 100%;
+}
+ul li a{
+    display: block;
+    line-height: 39px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    color: darkgray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+ul li a:hover {
+    color : black;
+    font-weight: 600;
+}
+.header-btn {
+    line-height: 100px;
+    width: 120px;
+    border : 2px solid black;
+}
+.header-btn:hover {
+    background-color: black;
+    cursor: pointer;
+
+}
+.header-btn:hover > a {
+    color : white;
+}
+.header-btn a {
+    color: black;
+}
+
+
+/* 
+Content Css
+*/
+/*
+    part 1
+*/
+.content {
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.content::after{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -2;
+    content: "";
+    height: 550px;
+    width: 100%;
+    background-color: hsl(256, 26%, 20%);
+}
+.content .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.center .content-text {
+    width: 60%;
+    vertical-align: middle;
+    position: relative;
+}
+.center .content-text:before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 280%;
+    border-top: 1px solid white;
+    border-bottom: 2px solid rgb(134, 134, 134);
+    top: -20%;
+    left : 0%;
+    z-index: -1;
+}
+.center .content-text h1 , 
+.center .content-text p {
+    font-family: 'Karla', sans-serif;
+    color : rgb(243, 243, 243);
+}
+
+.center .content-text h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    line-height: 90%;
+}
+
+.center .content-text p{
+    font-size : 0.9em;
+    margin-top : 30px;
+    font-weight: 10;
+    line-height: 180%;
+    margin-bottom: 40px;
+}
+.center .content-img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 35%;
+    float: left;
+}
+.center .content-img img {
+    width: 95%;
+    z-index: 1;
+    position: relative;
+}
+.content #left{
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.content #right{
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: 0%;
+}
+.content .content-text .content-btn {
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    padding : 9px 25px;
+    color : white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+.content .content-text .content-btn:hover {
+    background-color: white;
+    color : hsl(256, 26%, 20%);
+}
+/* Content part 2*/
+.second-content {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-bottom: 120px;
+}
+.second-content h1:nth-child(1){
+    font-size : 3.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.second-content .introduce{
+    display: flex;
+    margin-top: 60px;
+}
+.second-content .col-4{
+    font-family: 'DM Serif Display', serif;
+    width: 30%;
+    margin-right: 3%;
+}
+.second-content .introduce .title {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.second-content .introduce .short-info{
+    font-family: 'Karla', sans-serif;
+    color : rgb(163, 163, 163);
+    
+}
+
+
+
+/*banner*/
+.second-content .banner {
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 70px;
+    width: 100%;
+    background-color: hsl(256, 26%, 20%);
+    position: relative;
+}
+.second-content .banner img {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 0;
+    height: 100%;
+}
+.second-content .banner h1{
+    width: 50%;
+    font-size: 3.5rem;
+    color : white;
+    word-wrap: break-word;
+}
+
+.second-content .banner a:hover{
+    background-color: white;
+    color : hsl(256, 26%, 20%);
+}
+    .second-content .banner a{
+    z-index: 1;
+    width: 12%;
+    height: 16%;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    color : white;
+    background-color: transparent;
+    border: 1px solid white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgb(245, 244, 244);
+    position: relative;
+}
+
+footer .up {
+    z-index: 10000;
+    width: 70%;
+    height: 100px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(199, 199, 199);
+}
+
+
+
+
+footer .down {
+    width: 70%;
+    z-index: 10;
+    margin : 60px auto 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .down .col-3{
+    width: 25%;
+}
+
+footer .down .col-3 a:hover {
+    border-bottom: 2px solid black;
+    width: fit-content;
+}
+footer .down .col-3 a {
+    border-bottom: transparent solid 2px;
+    font-family: 'Karla', sans-serif;
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+footer .down .col-3 .title {
+    z-index: 100;
+    color : rgb(114, 114, 114);
+    margin-bottom : 25px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.box {
+    width: 60%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  
+}
+
+.box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'DM Serif Display', serif;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #6c61b8 ;
+}
+.container h2{
+    color:#eaeaea ;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.pricerow{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 25px;
+}
+.pricecol{
+    background: #4d3084 ;
+    padding: 25% 8%;
+    border-radius: 10px;
+    color: #f1f1f1 ;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pricecol p{
+    font-size: 22px;
+
+}
+.pricecol h3 {
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 600;
+}
+.pricecol h3 span{
+    font-size: 16px;
+}
+.pricecol .details {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    
+    margin-top: 20px; 
+}
+
+.pricecol .details p {
+    margin: 5px 0; 
+}
+.pricecol p{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+  
+    .pricecol button{
+        width: 100%;
+        padding:14px 0 ;
+        background: transparent;
+        color: #fff;
+        font-size: 15px;
+        border: 3px solid #ece9ea;
+        border-radius: 6px;
+        margin-top: 35px;
+        cursor: pointer;
+        transition: background;
+        }
+  .pricecol button:hover{
+               background: #e33058;
+    }
