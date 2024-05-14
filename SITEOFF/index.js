@@ -19,7 +19,6 @@ $('.message a').click(function(){
  });
 
  var users=[{username: 'imrane1' ,password: '12345678@', fullname: 'imrane lakniti' , email: 'imranelak11@gmail.com'},
-                {username: 'amine1' ,password: '4321@', fullname:"amine elkarmi", email:"amineelkarmi11@gmail.com" },
                 {username:'zakaria1',password:'zakaria123@',fullname:"zakaria zakar",email:"zakaria1@gmail.com" }   ]
 
 
