@@ -96,17 +96,7 @@ Content Css
     vertical-align: middle;
     position: relative;
 }
-.center .content-text:before {
-    position: absolute;
-    content: "";
-    width: 40%;
-    height: 280%;
-    border-top: 1px solid white;
-    border-bottom: 2px solid rgb(134, 134, 134);
-    top: -20%;
-    left : 0%;
-    z-index: -1;
-}
+
 .center .content-text h1 , 
 .center .content-text p {
     font-family: 'Karla', sans-serif;
@@ -129,29 +119,8 @@ Content Css
     line-height: 180%;
     margin-bottom: 40px;
 }
-.center .content-img {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 35%;
-    float: left;
-}
-.center .content-img img {
-    width: 95%;
-    z-index: 1;
-    position: relative;
-}
-.content #left{
-    width: 10%;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-}
-.content #right{
-    position: absolute;
-    z-index: 1;
-    top: 0%;
-    right: 0%;
-}
+
+
 .content .content-text .content-btn {
     font-family: 'Karla', sans-serif;
     text-decoration: none;
@@ -174,11 +143,7 @@ Content Css
     width: 70%;
     margin-bottom: 120px;
 }
-.second-content h1:nth-child(1){
-    font-size : 3.5rem;
-    font-weight: 700;
-    position: relative;
-}
+
 
 .second-content .introduce{
     display: flex;
