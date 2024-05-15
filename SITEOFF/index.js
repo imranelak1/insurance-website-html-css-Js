@@ -35,7 +35,7 @@ function signin(){
                         return true;
                     }
 
-                    } alert("password incorrect");
+                    } alert("Username or password incorrect");
                     return false;
 
 
