@@ -45,7 +45,7 @@ function signup(){
     var fullname = document.getElementById("name").value;
     var username = document.getElementById("user").value;
     var email = document.getElementById("email").value;
-    var password = document.getElementById("passwordSign").value; 
+    var password = document.getElementById("password").value; 
 
                 for(var i=0;i<users.length;i++){
                     if(username===users[i].username){
